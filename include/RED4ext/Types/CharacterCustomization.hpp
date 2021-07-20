@@ -26,10 +26,7 @@ namespace game::ui
     struct CharacterCreationPuppetPreviewGameController;
     struct CharacterCustomizationInfo;
     struct CharacterCustomizationOptionImpl;
-    struct CharacterCustomizationAction;
-    struct IndexedAppearanceDefinition;
     struct ICharacterCustomizationComponent;
-    struct PreviewGameController;
 
     struct CharacterCustomizationSystem : IScriptable
     {
@@ -60,7 +57,7 @@ namespace game::ui
         virtual void sub_1D0() = 0;
         virtual void sub_1D8() = 0;
         virtual void LoadGenderCustomizationData(Handle<game::Puppet>& puppet, bool isMale,
-                                                 Handle<PreviewGameController>& ccPuppetPreviewGameController) = 0;
+            Handle<CharacterCreationPuppetPreviewGameController>& ccPuppetPreviewGameController) = 0;
         virtual void sub_1E8() = 0;
         virtual void GetBodyOptions(const CName& presetName,
                                     DynArray<Handle<CharacterCustomizationOptionImpl>>& options) = 0;

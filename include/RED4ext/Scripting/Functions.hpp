@@ -34,7 +34,18 @@ struct CBaseFunction : IFunction
     {
         uint32_t isNative : 1; // 01
         uint32_t isStatic : 1; // 02
-        uint32_t b2 : 30;
+        uint32_t b2 : 1;       // 03
+        uint32_t b3 : 1;       // 04
+        uint32_t b4 : 1;       // 05
+        uint32_t b5 : 1;       // 06
+        uint32_t b6 : 1;       // 07
+        uint32_t b7 : 1;       // 08
+        uint32_t b8 : 1;       // 09
+        uint32_t b9 : 1;       // 0A
+        uint32_t b10 : 1;      // 0B
+        uint32_t b11 : 1;      // 0C
+        uint32_t b12 : 1;      // 0D
+        uint32_t isConst : 1;  // 0E
     };
     RED4EXT_ASSERT_SIZE(CBaseFunction::Flags, 0x4);
 

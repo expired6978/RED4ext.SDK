@@ -22,6 +22,7 @@
 #include <RED4ext/RTTITypes.hpp>
 #include <RED4ext/Scripting/CProperty.hpp>
 #include <RED4ext/Scripting/Functions.hpp>
+#include <RED4ext/Scripting/OpcodeHandlers.hpp>
 #include <RED4ext/Scripting/Stack.hpp>
 #include <RED4ext/Scripting/Utils.hpp>
 
